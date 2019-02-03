@@ -1,0 +1,567 @@
+
+/* 글자 폰트 적용 */
+
+html *{
+        font-family: "Nanum Gothic Coding", sans-serif;
+ }
+      
+.navbar .navbar-brand img {
+	height : 50px;
+}
+
+.navbar .navbar-nav > li {
+	padding-left : 20px;
+	padding-right : 20px;
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+	 font-weight : 500;
+}
+
+/*  link to top Button */
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+
+
+
+.footer_area {
+	color : #dddddd;
+	background-color : #222222;
+}
+.footer_area .footer_inner {
+	padding-left : 20px;
+	padding-right : 20px;
+	font-size : 13px;
+	letter-spacing : 1px;
+}
+.footer_area .footer_inner p {
+	margin-bottom : 0.5rem; 
+	display : inline;
+}
+.footer_area .footer_inner .copyright {
+	color : #c0c0c0;
+}
+.footer_area .footer_inner .footer_contact {
+	margin-top : 50px;
+	margin-bottom : 50px;
+}
+.footer_area .footer_inner .map_img {
+	margin-top : 50px;
+	margin-bottom : 50px;
+	padding-left : 30px;
+	padding-right : 30px;
+}
+.footer_area .footer_inner .btn {
+	font-size : 11px;
+	margin-left: 10px;
+	padding : 3px 5px;
+}
+
+
+/*--================Home Banner Area =================- */
+.banner_area {
+	min-height : 200px;
+	padding-top : 100px;
+	padding-bottom : 100px;
+	background-image : url('../img/bg_coffee.jpg');
+	background-position : center;
+	background-size : cover;
+}
+@media (max-width: 575px) {
+	.banner_area {
+		background-image : url('../img/bg_coffee_m.jpg');
+	}
+}
+
+/* Projects Area css
+============================================================================================ */
+.projects_area {
+	margin-top : 100px;
+	margin-bottom : 100px;
+	padding-top : 100px;
+	padding-bottom : 100px;
+	background-color : #f6f6f6;
+}
+
+
+.projects_fillter .filter {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px; }
+  .projects_fillter .filter li {
+    display: inline-block;
+    margin-right: 30px; }
+    .projects_fillter .filter li a {
+      font-size: 13px;
+      font-family: "Roboto", sans-serif;
+      color: #777777; }
+    .projects_fillter .filter li:last-child {
+      margin-right: 0px; }
+    .projects_fillter .filter li.active a {
+      color: #8490ff; }
+
+.projects_inner {
+  margin-bottom: -30px; }
+
+.projects_item {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 60px; }
+  .projects_item:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 300ms ease; }
+  .projects_item .projects_text {
+    position: absolute;
+    left: 0px;
+    bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px; }
+    .projects_item .projects_text h4 {
+      font-size: 21px;
+      font-family: "Heebo", sans-serif;
+      font-weight: bold;
+      color: #222222;
+      margin-bottom: 5px;
+      transition: all 300ms linear 0s;
+      text-transform: uppercase;
+      cursor: pointer; }
+    .projects_item .projects_text p {
+      margin-bottom: 0px;
+      font-size: 14px; }
+  .projects_item:hover:before {
+    opacity: 1; }
+  .projects_item:hover .projects_text h4 {
+    background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+/* End Projects Area css
+============================================================================================ */
+
+
+
+
+/* history Area css
+============================================================================================ */
+.history_area .history_inner{
+	margin-top : 100px;
+	margin-bottom : 100px;
+	padding-top : 100px;
+	padding-bottom : 100px;
+	background-color : white;
+}
+.history_area .history-year{
+	border-top : 2px solid #508fef;
+	color : black;
+	min-width: 90px;
+	letter-spacing : 2px;
+}
+.history_area .history-month ul{
+	border-left : 4px solid #dddddd;
+	margin-left : 15px;
+	margin-bottom : 0px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+.history_area .history-month ul li:before {
+	content: "";
+	position: absolute;
+    top: 2px;
+    left: -42px;
+    width: 20px;
+    height: 20px;
+	background-image: url('../img/list-style.png');
+}
+
+.history_area .history-month ul li{
+	list-style-type: none;
+    position: relative;
+	margin-left : -10px;
+	margin-bottom: 10px;
+	vertical-align: middle;
+}
+
+@media (max-width: 991px) {
+	.history_area .history-year {
+		margin-left : 50px;
+	}
+	.history_area .history-month {
+		margin-right : auto;
+	}
+}
+
+
+/* introduce_area */
+
+
+
+
+
+
+
+/* Feature Area css ============================================================================================ */
+.feature_area {
+  background: #f9f9ff; }
+  .feature_area.feature_tow {
+    background: #fff; }
+    .feature_area.feature_tow .feature_item {
+      background: #f9f9ff; }
+      .feature_area.feature_tow .feature_item:hover {
+        background: #fff; }
+
+.feature_inner {
+  margin-bottom: -30px; }
+
+.feature_item {
+  padding: 50px 35px;
+  border-radius: 10px;
+  transition: all 300ms linear 0s;
+  background: #fff;
+  margin-bottom: 30px; }
+  .feature_item i {
+    margin-bottom: 35px;
+    display: block; }
+    .feature_item i:before {
+      margin-left: 0px;
+      font-size: 60px;
+      color: #e1e1e1;
+      line-height: 60px; }
+  .feature_item h4 {
+    color: #222222;
+    font-size: 21px;
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+  .feature_item p {
+    margin-bottom: 0px; }
+  .feature_item .main_btn {
+    padding: 0px 30px;
+    line-height: 38px; }
+  .feature_item:hover {
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+    border-color: #fff; }
+    .feature_item:hover i:before {
+      background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
+/* End Feature Area css ============================================================================================ */
+
+
+
+
+
+
+.feature_area .container{
+	margin-top : 100px;
+	padding-top : 100px;
+}
+.feature_area .feature_inner{
+	margin-bottom : 100px;
+	padding-top : 70px;
+	padding-bottom : 100px;
+}
+
+
+
+
+
+/*============== contact_area css ================*/
+
+.contact_area .contact_inner{
+	color : white;
+	max-width : 1000px;
+	margin-top : 50px;
+	margin-bottom : 50px;
+	padding-top : 50px;
+	padding-bottom : 50px;
+	padding-left : 30px;
+	padding-right : 20px;
+	background-color : #4c4c4c;
+	font-size : 15px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.contact_area .contact_inner .contact_form .address_detail{
+	background-color: #e3e3e3;
+	color: black;
+}
+.contact_area .contact_inner .contact_form .address_detail dt{
+	float : left;
+	margin-right : 10px;
+}
+.contact_area .contact_inner .contact_form .address_detail dd{
+	margin-left : 30px;
+}
+.contact_area .contact_inner .mapBox{
+
+	border : 1px solid #222642;
+}
+
+.contact_area .contact_inner .mapBox{
+	margin-top : auto;
+	margin-bottom : auto;
+	position: relative;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.26%;
+}
+.contact_area .contact_inner .mapBox div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.contact_area .contact_inner input{
+	margin-bottom : 5px;
+}
+
+
+/*============== board_area css ================*/
+
+.board_area .board_inner {
+	margin-top : 50px;
+	margin-bottom : 100px;
+	font-size : 14px;
+}
+
+.board_area .board_inner thead{
+	
+}
+.board_area .board_inner th,
+.board_area .board_inner td{
+	padding : 0.3rem;
+}
+.board_area .board_inner .seq{
+	width : 10%;
+}
+.board_area .board_inner .subject{
+	width : 60%;
+}
+.board_area .board_inner .regist{
+	width : 15%;
+}
+.board_area .board_inner .registDate{
+	width : 15%;
+}
+
+/*============== board_area css ================*/
+/* #myEditModal .modal-body {
+	min-height : 700px;
+} */
+
+/*============== boardDetail_area css ================*/
+
+.boardDetail_area  .boardDetail_inner{
+	margin-top : 50px;
+	margin-bottom : 100px;
+	font-size : 14px;
+}
+
+.boardDetail_area  .boardDetail_inner .viewBox{
+	max-width : 600px;
+	border : 1px solid black;
+	margin : 50px auto;
+	
+}
+
+
+
+
+
+/*============== gallery_area css ================*/
+
+.gallery_area  .gallery_inner{
+	margin-top : 50px;
+	margin-bottom : 100px;
+	font-size : 14px;
+	
+}
+.gallery_area  .gallery_inner .gallery-contents{
+	font-size : 14px;
+	
+}
+.gallery_area  .gallery_inner .gallery-contents h5{
+	font-size : 16px;
+	
+}
+.single-gallery-image {
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  height: 200px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+
+.single-gallery-image:hover {
+  opacity: .8; }
+
+
+
+
+/*============== guide_area css ================*/
+
+.guide_area .guide_inner {
+	margin-top : 50px;
+	margin-bottom : 100px;
+	font-size : 14px;
+}
+
+
+
+
+/*============== login_area css ================*/
+/*
+ * Specific styles of signin component
+ */
+/*
+ * General styles
+ */
+
+
+.login_card h3 {
+    margin : 10px auto 30px auto;
+}
+
+/*
+ * Card component
+ */
+.login_card {
+    max-width: 350px;
+    background-color: #F7F7F7;
+    /* just in case there no content*/
+    padding: 40px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/*
+ * Form styles
+ */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+}
+
+.btn.btn-signin {
+    /*background-color: #4d90fe; */
+    background-color: rgb(104, 145, 162);
+    /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
+    padding: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    background-color: rgb(12, 97, 33);
+}
+
+.forgot-password {
+    color: rgb(104, 145, 162);
+}
+
+.forgot-password:hover,
+.forgot-password:active,
+.forgot-password:focus{
+    color: rgb(12, 97, 33);
+}
